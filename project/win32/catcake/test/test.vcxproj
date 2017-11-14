@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3F484C03-02C3-4539-961A-46BC8E03B991}</ProjectGuid>
+    <RootNamespace>test</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\Obj\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_col_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_draw_mgr_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_font_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_lit_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_lts_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_mdl_data_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_mdl_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_mot_data_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_mot_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_node_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_prim_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_rend_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_scr_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_shd_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_sprt_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_tex_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\rend_test\ck_rend_light_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\draw_test\rend_test\ck_rend_shader_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_buf_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_flag_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_id_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_list_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_map_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_msg_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_str_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_tree_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_type_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\math_test\ck_fix_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\math_test\ck_mat_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\math_test\ck_math_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\math_test\ck_quat_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\math_test\ck_vec_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\mem_test\ck_mem_mgr_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\mem_test\ck_mem_util_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\res_test\ck_res_mgr_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\res_test\ck_res_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\sys_test\ck_sys_mgr_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\sys_test\ck_sys_util_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\task_test\ck_task_mgr_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\task_test\ck_task_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\task_test\ck_task_util_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\key_test\ck_key_mgr_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\dbg_test\ck_dbg_mgr_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\util_test\ck_util_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\snd_test\ck_snd_mgr_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\cdt_test\ck_cdt_aabb_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\cdt_test\ck_cdt_box_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\cdt_test\ck_cdt_ray_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\cdt_test\ck_cdt_sph_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\cdt_test\ck_cdt_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\cdt_test\ck_cdt_tri_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\conf_test\ck_conf_mgr_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\conf_test\ck_conf_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\conf_test\ck_ent_test.cpp" />
+    <ClCompile Include="..\..\..\..\test\main.cpp" />
+    <ClCompile Include="..\..\..\..\test\test_util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\test\test.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\catcake\catcake.vcxproj">
+      <Project>{c6435f9f-d5b5-4f7a-8ef7-7825587f6108}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

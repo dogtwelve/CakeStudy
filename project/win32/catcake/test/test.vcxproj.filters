@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="draw_test">
+      <UniqueIdentifier>{30fa3039-8987-4125-8c6a-3f3889a6d241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="draw_test\rend_test">
+      <UniqueIdentifier>{5495372b-aefe-4da0-8309-a0170c3ea898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen_test">
+      <UniqueIdentifier>{6c65d169-7432-4d10-a56f-62ed0d623567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math_test">
+      <UniqueIdentifier>{5979ee5f-9c11-4949-9a1c-8024b7fbd430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mem_test">
+      <UniqueIdentifier>{bd0640de-a0f0-4774-bd73-0e1af165a245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res_test">
+      <UniqueIdentifier>{22ac69fa-db39-4652-8b60-f6946d2b51b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sys_test">
+      <UniqueIdentifier>{b6477a7c-3b29-4296-9d70-4deeca403df0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="task_test">
+      <UniqueIdentifier>{f53a41d1-fd91-4a42-a202-0a2b9dfd282d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="key_test">
+      <UniqueIdentifier>{7eb6f30a-6228-432a-a225-9ed4d641c31a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbg_test">
+      <UniqueIdentifier>{ab77fc7e-04b8-4342-9dba-d091558733ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util_test">
+      <UniqueIdentifier>{bfc25d8b-bbd0-456b-9477-b3522a63b6b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="snd_test">
+      <UniqueIdentifier>{b799e67b-8723-4a52-9507-3ad466eef05c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cdt_test">
+      <UniqueIdentifier>{60f288e2-679e-4863-aa84-d9e359039ee5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="conf_test">
+      <UniqueIdentifier>{921317d0-2756-4f5d-a8d9-d20caf54100b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_col_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_draw_mgr_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_font_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_lit_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_lts_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_mdl_data_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_mdl_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_mot_data_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_mot_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_node_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_prim_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_rend_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_scr_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_shd_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_sprt_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\ck_tex_test.cpp">
+      <Filter>draw_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\rend_test\ck_rend_light_test.cpp">
+      <Filter>draw_test\rend_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\draw_test\rend_test\ck_rend_shader_test.cpp">
+      <Filter>draw_test\rend_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_buf_test.cpp">
+      <Filter>gen_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_flag_test.cpp">
+      <Filter>gen_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_id_test.cpp">
+      <Filter>gen_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_list_test.cpp">
+      <Filter>gen_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_map_test.cpp">
+      <Filter>gen_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_msg_test.cpp">
+      <Filter>gen_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_str_test.cpp">
+      <Filter>gen_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_tree_test.cpp">
+      <Filter>gen_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\gen_test\ck_type_test.cpp">
+      <Filter>gen_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\math_test\ck_fix_test.cpp">
+      <Filter>math_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\math_test\ck_mat_test.cpp">
+      <Filter>math_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\math_test\ck_math_test.cpp">
+      <Filter>math_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\math_test\ck_quat_test.cpp">
+      <Filter>math_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\math_test\ck_vec_test.cpp">
+      <Filter>math_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\mem_test\ck_mem_mgr_test.cpp">
+      <Filter>mem_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\mem_test\ck_mem_util_test.cpp">
+      <Filter>mem_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\res_test\ck_res_mgr_test.cpp">
+      <Filter>res_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\res_test\ck_res_test.cpp">
+      <Filter>res_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\sys_test\ck_sys_mgr_test.cpp">
+      <Filter>sys_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\sys_test\ck_sys_util_test.cpp">
+      <Filter>sys_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\task_test\ck_task_mgr_test.cpp">
+      <Filter>task_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\task_test\ck_task_test.cpp">
+      <Filter>task_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\task_test\ck_task_util_test.cpp">
+      <Filter>task_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\key_test\ck_key_mgr_test.cpp">
+      <Filter>key_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\dbg_test\ck_dbg_mgr_test.cpp">
+      <Filter>dbg_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\util_test\ck_util_test.cpp">
+      <Filter>util_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\snd_test\ck_snd_mgr_test.cpp">
+      <Filter>snd_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\cdt_test\ck_cdt_aabb_test.cpp">
+      <Filter>cdt_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\cdt_test\ck_cdt_box_test.cpp">
+      <Filter>cdt_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\cdt_test\ck_cdt_ray_test.cpp">
+      <Filter>cdt_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\cdt_test\ck_cdt_sph_test.cpp">
+      <Filter>cdt_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\cdt_test\ck_cdt_test.cpp">
+      <Filter>cdt_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\cdt_test\ck_cdt_tri_test.cpp">
+      <Filter>cdt_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\conf_test\ck_conf_mgr_test.cpp">
+      <Filter>conf_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\conf_test\ck_conf_test.cpp">
+      <Filter>conf_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\conf_test\ck_ent_test.cpp">
+      <Filter>conf_test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\test\main.cpp" />
+    <ClCompile Include="..\..\..\..\test\test_util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\test\test.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1 @@
+ndk-stack -sym obj\local\armeabi -dump log.txt>>trace.txt

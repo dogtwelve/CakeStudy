@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="icon">
+      <UniqueIdentifier>{10cbe671-72ff-4201-ae46-27cf5c784743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shader">
+      <UniqueIdentifier>{492b11fd-58ca-460d-b4fb-26745f91bb25}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\icon\catcake.ico">
+      <Filter>icon</Filter>
+    </None>
+    <None Include="..\..\..\..\data\refract.frag">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="..\..\..\..\data\refract.vert">
+      <Filter>shader</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\icon\catcake.rc">
+      <Filter>icon</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\icon\resource.h">
+      <Filter>icon</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sample07_shader\emboss_font.cpp" />
+    <ClCompile Include="..\..\..\..\sample07_shader\main.cpp" />
+    <ClCompile Include="..\..\..\..\sample01_debug\catcake_logo.cpp" />
+    <ClCompile Include="..\..\..\..\sample07_shader\waterdrop.cpp" />
+  </ItemGroup>
+</Project>

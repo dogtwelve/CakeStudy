@@ -1,0 +1,19 @@
+********** Crash dump: **********
+Build fingerprint: 'MOTO/jordan_china/umts_jordan:2.3.4/4.5.3-109_DPP-6/1315500656:user/release-keys'
+pid: 8130, tid: 8138  >>> catcake_application.hello_catcake <<<
+signal 7 (SIGBUS), code 128 (?), fault addr 00000000
+Stack frame 02-24 17:31:55.421: I/DEBUG(8139):          #00  pc 0002a29a  /data/data/catcake_application.hello_catcake/lib/libmotion_catcake.so: Routine ckMotData::setNodeLocal(unsigned short, unsigned int, ckMat const&) at E:/Source/catcake/project/android//jni/../../../source/draw/ck_mot_data.cpp:339
+Stack frame 02-24 17:31:55.421: I/DEBUG(8139):          #01  pc 0001bd4e  /data/data/catcake_application.hello_catcake/lib/libmotion_catcake.so: Routine initMotData at E:/Source/catcake/sample/project/android/motion//jni/main.cpp:63
+Stack frame 02-24 17:31:55.421: I/DEBUG(8139):          #02  pc 0001c448  /data/data/catcake_application.hello_catcake/lib/libmotion_catcake.so: Routine ckMain_() at E:/Source/catcake/sample/project/android/motion//jni/main.cpp:150
+Stack frame 02-24 17:31:55.421: I/DEBUG(8139):          #03  pc 0002e8ca  /data/data/catcake_application.hello_catcake/lib/libmotion_catcake.so: Routine Java_com_kitaoworks_catcake_Catcake_nativeInitialize at E:/Source/catcake/project/android//jni/../../../source/low_level_api/android/ck_low_level_sys_android.cpp:377
+Stack frame 02-24 17:31:55.421: I/DEBUG(8139):          #04  pc 00011e74  /system/lib/libdvm.so
+Stack frame 02-24 17:31:55.421: I/DEBUG(8139):          #05  pc 0004384a  /system/lib/libdvm.so
+Stack frame 02-24 17:31:55.428: I/DEBUG(8139):          #06  pc 0004906e  /system/lib/libdvm.so
+Stack frame 02-24 17:31:55.428: I/DEBUG(8139):          #07  pc 00017074  /system/lib/libdvm.so
+Stack frame 02-24 17:31:55.428: I/DEBUG(8139):          #08  pc 0001c25c  /system/lib/libdvm.so
+Stack frame 02-24 17:31:55.428: I/DEBUG(8139):          #09  pc 0001b154  /system/lib/libdvm.so
+Stack frame 02-24 17:31:55.428: I/DEBUG(8139):          #10  pc 00059ef0  /system/lib/libdvm.so
+Stack frame 02-24 17:31:55.428: I/DEBUG(8139):          #11  pc 0005a104  /system/lib/libdvm.so
+Stack frame 02-24 17:31:55.428: I/DEBUG(8139):          #12  pc 0004e446  /system/lib/libdvm.so
+Stack frame 02-24 17:31:55.428: I/DEBUG(8139):          #13  pc 0001195c  /system/lib/libc.so
+Stack frame 02-24 17:31:55.428: I/DEBUG(8139):          #14  pc 00011520  /system/lib/libc.so

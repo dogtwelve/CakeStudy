@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{659e1ba2-4411-499f-94a1-af4fb8cd34a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\gen">
+      <UniqueIdentifier>{fccb8210-397d-4144-ac39-b247fde4389f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\draw">
+      <UniqueIdentifier>{6e3b754a-be6e-4cc9-89be-c93cc8f7d681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\draw\rend">
+      <UniqueIdentifier>{3fa83298-08c0-4a66-918c-34a4456ac42a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\math">
+      <UniqueIdentifier>{4e3d532b-ae2b-43bc-a894-b435e5529c65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\task">
+      <UniqueIdentifier>{a5db0d95-a58a-4e14-a7d9-01b216f4d92e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\sys">
+      <UniqueIdentifier>{58f524d4-5724-47ef-bbb4-a2ad5910be75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\res">
+      <UniqueIdentifier>{f3134013-43e5-4cbb-8300-40534f6ba1da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\key">
+      <UniqueIdentifier>{5b19ef72-1652-48de-b5e6-8e5e4d76a89b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\mem">
+      <UniqueIdentifier>{aa703887-59ce-4e88-b60a-56e93e1226df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\dbg">
+      <UniqueIdentifier>{663ec069-f20a-4eea-ac83-289ae631b3e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\snd">
+      <UniqueIdentifier>{a277da55-bb1a-4db5-bdad-3d311a0a128b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\cdt">
+      <UniqueIdentifier>{db3e3997-1427-4345-8c8a-f28edc309ed7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\util">
+      <UniqueIdentifier>{0db53762-df69-4771-8e59-068d44e45bb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\conf">
+      <UniqueIdentifier>{b09b96b4-d9ea-486a-ac4e-d2de1280c019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{c407c731-db9c-4472-aa2e-cade7ccf69ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\low_level_api">
+      <UniqueIdentifier>{e3fa4666-dd32-4ec6-9ed1-8baa2f053f64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\low_level_api\win32">
+      <UniqueIdentifier>{6a2a7ab4-e022-4468-b510-a51e479f7a21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\low_level_api\linux">
+      <UniqueIdentifier>{4fcd0efc-cd59-4fdc-8826-40f472e81a28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\low_level_api\iphone">
+      <UniqueIdentifier>{8b7f1c5a-c900-4705-86fa-74f646006169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\low_level_api\macosx">
+      <UniqueIdentifier>{97356a90-021b-4fe5-9b31-a0edbcb5ec8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\low_level_api\android">
+      <UniqueIdentifier>{48fe8170-ff1f-4096-b510-be173d6de69c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gen">
+      <UniqueIdentifier>{78ecc0ed-afb1-427b-a8c3-d1f743ce6ffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\draw">
+      <UniqueIdentifier>{b8cc356f-ad68-48b0-af1d-711abb5b3a1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\draw\rend">
+      <UniqueIdentifier>{90e9d18e-5be4-4cab-aeb0-634cdda5bf0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\math">
+      <UniqueIdentifier>{6d5a8325-05ed-42e9-b8dd-3cc8a65623fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\task">
+      <UniqueIdentifier>{0f75bca4-109e-4c18-98b0-faed3c9c2c20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\sys">
+      <UniqueIdentifier>{8fedf191-1603-4ac5-88d7-769d6105764e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\res">
+      <UniqueIdentifier>{fbb5b7e9-0840-4db4-85e8-256f2ed8a943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\key">
+      <UniqueIdentifier>{7c5745a1-811c-4cf9-89ca-50293d54bc4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\dbg">
+      <UniqueIdentifier>{2dd7a701-b28b-4dd2-b7e2-186e9ab8a0d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\util">
+      <UniqueIdentifier>{d0a62603-c8fb-4ecf-a049-a04e4577ddd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\snd">
+      <UniqueIdentifier>{7c2af9ea-630e-4037-9f7e-f5c07f50b5ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\cdt">
+      <UniqueIdentifier>{6059e2b2-4092-408d-bc11-74d38089b0f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\mem">
+      <UniqueIdentifier>{bd9b7ff1-9ad0-4601-a587-87afafcde518}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\conf">
+      <UniqueIdentifier>{85137ae3-1a09-4a0c-905d-d84dda9e2f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="doc">
+      <UniqueIdentifier>{c1307d9b-6dd8-4b17-84d1-c7a99eeccab0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\include\catcake.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\catcake_main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\ck_cdt_all.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\ck_conf_all.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\ck_dbg_all.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\ck_def.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\ck_draw_all.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\ck_gen_all.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\ck_key_all.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\ck_math_all.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\ck_mem_all.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\ck_res_all.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\ck_snd_all.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\ck_sys_all.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\ck_task_all.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\ck_util_all.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\gen\ck_buf.h">
+      <Filter>include\gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\gen\ck_flag.h">
+      <Filter>include\gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\gen\ck_id.h">
+      <Filter>include\gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\gen\ck_list.h">
+      <Filter>include\gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\gen\ck_map.h">
+      <Filter>include\gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\gen\ck_msg.h">
+      <Filter>include\gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\gen\ck_str.h">
+      <Filter>include\gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\gen\ck_tree.h">
+      <Filter>include\gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\gen\ck_type.h">
+      <Filter>include\gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_col.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_draw.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_draw_mgr.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_font.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_lit.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_lts.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_mdl.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_mdl_data.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_mot.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_mot_data.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_node.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_prim.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_rend.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_scr.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_shd.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_sprt.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\ck_tex.h">
+      <Filter>include\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\rend\ck_rend_light.h">
+      <Filter>include\draw\rend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\draw\rend\ck_rend_shader.h">
+      <Filter>include\draw\rend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\math\ck_fix.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\math\ck_mat.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\math\ck_math.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\math\ck_quat.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\math\ck_vec.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\task\ck_task.h">
+      <Filter>include\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\task\ck_task_mgr.h">
+      <Filter>include\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\task\ck_task_util.h">
+      <Filter>include\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\sys\ck_sys_mgr.h">
+      <Filter>include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\sys\ck_sys_util.h">
+      <Filter>include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\res\ck_res.h">
+      <Filter>include\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\res\ck_res_mgr.h">
+      <Filter>include\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\key\ck_key_mgr.h">
+      <Filter>include\key</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\mem\ck_mem_mgr.h">
+      <Filter>include\mem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\mem\ck_mem_util.h">
+      <Filter>include\mem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\dbg\ck_dbg_mgr.h">
+      <Filter>include\dbg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\snd\ck_snd_mgr.h">
+      <Filter>include\snd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\cdt\ck_cdt.h">
+      <Filter>include\cdt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\util\ck_util.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\conf\ck_conf.h">
+      <Filter>include\conf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\conf\ck_conf_mgr.h">
+      <Filter>include\conf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\conf\ck_ent.h">
+      <Filter>include\conf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\ck_low_level_api.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\ck_private_macro.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\low_level_api\iphone\ck_iphone_bridge.h">
+      <Filter>source\low_level_api\iphone</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\source\low_level_api\ck_low_level_draw_opengl.cpp">
+      <Filter>source\low_level_api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\low_level_api\ck_low_level_io_gen.cpp">
+      <Filter>source\low_level_api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\low_level_api\ck_low_level_math_gen.cpp">
+      <Filter>source\low_level_api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\low_level_api\ck_low_level_mem_gen.cpp">
+      <Filter>source\low_level_api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\low_level_api\ck_low_level_util_freetype.cpp">
+      <Filter>source\low_level_api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\low_level_api\ck_low_level_util_libpng.cpp">
+      <Filter>source\low_level_api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\low_level_api\win32\ck_low_level_snd_win32.cpp">
+      <Filter>source\low_level_api\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\low_level_api\win32\ck_low_level_sys_win32.cpp">
+      <Filter>source\low_level_api\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\low_level_api\linux\ck_low_level_snd_linux.cpp">
+      <Filter>source\low_level_api\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\low_level_api\linux\ck_low_level_sys_linux.cpp">
+      <Filter>source\low_level_api\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\low_level_api\iphone\ck_low_level_snd_iphone.cpp">
+      <Filter>source\low_level_api\iphone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\low_level_api\iphone\ck_low_level_sys_iphone.cpp">
+      <Filter>source\low_level_api\iphone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\low_level_api\macosx\ck_low_level_snd_macosx.cpp">
+      <Filter>source\low_level_api\macosx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\low_level_api\macosx\ck_low_level_sys_macosx.cpp">
+      <Filter>source\low_level_api\macosx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\low_level_api\android\ck_low_level_snd_android.cpp">
+      <Filter>source\low_level_api\android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\low_level_api\android\ck_low_level_sys_android.cpp">
+      <Filter>source\low_level_api\android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\gen\ck_id.cpp">
+      <Filter>source\gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_col.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_draw.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_draw_mgr.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_font.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_lit.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_lts.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_mdl.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_mdl_data.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_mot.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_mot_data.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_node.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_prim.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_rend.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_scr.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_shd.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_sprt.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\ck_tex.cpp">
+      <Filter>source\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\rend\ck_rend_light.cpp">
+      <Filter>source\draw\rend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\draw\rend\ck_rend_shader.cpp">
+      <Filter>source\draw\rend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\math\ck_fix.cpp">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\math\ck_mat.cpp">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\math\ck_math.cpp">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\math\ck_quat.cpp">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\math\ck_vec.cpp">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\task\ck_task.cpp">
+      <Filter>source\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\task\ck_task_mgr.cpp">
+      <Filter>source\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\sys\ck_sys_mgr.cpp">
+      <Filter>source\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\sys\ck_sys_util.cpp">
+      <Filter>source\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\res\ck_res.cpp">
+      <Filter>source\res</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\res\ck_res_mgr.cpp">
+      <Filter>source\res</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\key\ck_key_mgr.cpp">
+      <Filter>source\key</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\dbg\ck_dbg_mgr.cpp">
+      <Filter>source\dbg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\dbg\ck_dbg_mgr_draw.cpp">
+      <Filter>source\dbg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\dbg\ck_dbg_mgr_dump.cpp">
+      <Filter>source\dbg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\dbg\ck_dbg_mgr_font.cpp">
+      <Filter>source\dbg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\util\ck_util.cpp">
+      <Filter>source\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\util\ck_util_import_3ds_model.cpp">
+      <Filter>source\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\util\ck_util_load_pixel_art_model.cpp">
+      <Filter>source\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\snd\ck_snd_mgr.cpp">
+      <Filter>source\snd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\snd\ck_snd_mgr_mix.cpp">
+      <Filter>source\snd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\cdt\ck_cdt_aabb.cpp">
+      <Filter>source\cdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\cdt\ck_cdt_box.cpp">
+      <Filter>source\cdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\cdt\ck_cdt_ray.cpp">
+      <Filter>source\cdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\cdt\ck_cdt_sph.cpp">
+      <Filter>source\cdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\cdt\ck_cdt_tri.cpp">
+      <Filter>source\cdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mem\ck_mem_mgr.cpp">
+      <Filter>source\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mem\ck_mem_util.cpp">
+      <Filter>source\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\conf\ck_conf.cpp">
+      <Filter>source\conf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\conf\ck_conf_mgr.cpp">
+      <Filter>source\conf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\conf\ck_conf_parse.cpp">
+      <Filter>source\conf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\conf\ck_ent.cpp">
+      <Filter>source\conf</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\source\low_level_api\iphone\ck_iphone_bridge.mm">
+      <Filter>source\low_level_api\iphone</Filter>
+    </None>
+    <None Include="..\..\..\..\doc\changelog.txt">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="..\..\..\..\doc\license.txt">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="..\..\..\..\doc\readme.txt">
+      <Filter>doc</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="icon">
+      <UniqueIdentifier>{21256144-1d96-425d-9b12-705355a34048}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\icon\catcake.ico">
+      <Filter>icon</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\icon\catcake.rc">
+      <Filter>icon</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\icon\resource.h">
+      <Filter>icon</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sample08_light\fog.cpp" />
+    <ClCompile Include="..\..\..\..\sample08_light\main.cpp" />
+    <ClCompile Include="..\..\..\..\sample01_debug\catcake_logo.cpp" />
+    <ClCompile Include="..\..\..\..\sample08_light\stage.cpp" />
+    <ClCompile Include="..\..\..\..\sample08_light\tetrahedron.cpp" />
+  </ItemGroup>
+</Project>

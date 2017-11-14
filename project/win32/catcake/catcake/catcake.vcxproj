@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C6435F9F-D5B5-4F7A-8EF7-7825587F6108}</ProjectGuid>
+    <RootNamespace>catcake</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\Obj\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\source;..\..\..\include\glext;..\..\..\include\zlib;..\..\..\include\libpng;..\..\..\include\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CATCAKE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>zlibd.lib;libpngd.lib;freetyped.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetName).lib" ..\..\..\..\lib
+copy "$(OutDir)$(TargetName).dll" ..\..\..\..\lib
+copy "$(OutDir)$(TargetName).dll" ..\..\..\..\sample\bin
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\source;..\..\..\include\glext;..\..\..\include\zlib;..\..\..\include\libpng;..\..\..\include\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CATCAKE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>zlib.lib;libpng.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)catcake.dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetName).lib" ..\..\..\..\lib
+copy "$(OutDir)$(TargetName).dll" ..\..\..\..\lib
+copy "$(OutDir)$(TargetName).dll" ..\..\..\..\sample\bin
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\include\catcake.h" />
+    <ClInclude Include="..\..\..\..\include\catcake_main.h" />
+    <ClInclude Include="..\..\..\..\include\ck_cdt_all.h" />
+    <ClInclude Include="..\..\..\..\include\ck_conf_all.h" />
+    <ClInclude Include="..\..\..\..\include\ck_dbg_all.h" />
+    <ClInclude Include="..\..\..\..\include\ck_def.h" />
+    <ClInclude Include="..\..\..\..\include\ck_draw_all.h" />
+    <ClInclude Include="..\..\..\..\include\ck_gen_all.h" />
+    <ClInclude Include="..\..\..\..\include\ck_key_all.h" />
+    <ClInclude Include="..\..\..\..\include\ck_math_all.h" />
+    <ClInclude Include="..\..\..\..\include\ck_mem_all.h" />
+    <ClInclude Include="..\..\..\..\include\ck_res_all.h" />
+    <ClInclude Include="..\..\..\..\include\ck_snd_all.h" />
+    <ClInclude Include="..\..\..\..\include\ck_sys_all.h" />
+    <ClInclude Include="..\..\..\..\include\ck_task_all.h" />
+    <ClInclude Include="..\..\..\..\include\ck_util_all.h" />
+    <ClInclude Include="..\..\..\..\include\gen\ck_buf.h" />
+    <ClInclude Include="..\..\..\..\include\gen\ck_flag.h" />
+    <ClInclude Include="..\..\..\..\include\gen\ck_id.h" />
+    <ClInclude Include="..\..\..\..\include\gen\ck_list.h" />
+    <ClInclude Include="..\..\..\..\include\gen\ck_map.h" />
+    <ClInclude Include="..\..\..\..\include\gen\ck_msg.h" />
+    <ClInclude Include="..\..\..\..\include\gen\ck_str.h" />
+    <ClInclude Include="..\..\..\..\include\gen\ck_tree.h" />
+    <ClInclude Include="..\..\..\..\include\gen\ck_type.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_col.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_draw.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_draw_mgr.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_font.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_lit.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_lts.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_mdl.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_mdl_data.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_mot.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_mot_data.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_node.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_prim.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_rend.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_scr.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_shd.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_sprt.h" />
+    <ClInclude Include="..\..\..\..\include\draw\ck_tex.h" />
+    <ClInclude Include="..\..\..\..\include\draw\rend\ck_rend_light.h" />
+    <ClInclude Include="..\..\..\..\include\draw\rend\ck_rend_shader.h" />
+    <ClInclude Include="..\..\..\..\include\math\ck_fix.h" />
+    <ClInclude Include="..\..\..\..\include\math\ck_mat.h" />
+    <ClInclude Include="..\..\..\..\include\math\ck_math.h" />
+    <ClInclude Include="..\..\..\..\include\math\ck_quat.h" />
+    <ClInclude Include="..\..\..\..\include\math\ck_vec.h" />
+    <ClInclude Include="..\..\..\..\include\task\ck_task.h" />
+    <ClInclude Include="..\..\..\..\include\task\ck_task_mgr.h" />
+    <ClInclude Include="..\..\..\..\include\task\ck_task_util.h" />
+    <ClInclude Include="..\..\..\..\include\sys\ck_sys_mgr.h" />
+    <ClInclude Include="..\..\..\..\include\sys\ck_sys_util.h" />
+    <ClInclude Include="..\..\..\..\include\res\ck_res.h" />
+    <ClInclude Include="..\..\..\..\include\res\ck_res_mgr.h" />
+    <ClInclude Include="..\..\..\..\include\key\ck_key_mgr.h" />
+    <ClInclude Include="..\..\..\..\include\mem\ck_mem_mgr.h" />
+    <ClInclude Include="..\..\..\..\include\mem\ck_mem_util.h" />
+    <ClInclude Include="..\..\..\..\include\dbg\ck_dbg_mgr.h" />
+    <ClInclude Include="..\..\..\..\include\snd\ck_snd_mgr.h" />
+    <ClInclude Include="..\..\..\..\include\cdt\ck_cdt.h" />
+    <ClInclude Include="..\..\..\..\include\util\ck_util.h" />
+    <ClInclude Include="..\..\..\..\include\conf\ck_conf.h" />
+    <ClInclude Include="..\..\..\..\include\conf\ck_conf_mgr.h" />
+    <ClInclude Include="..\..\..\..\include\conf\ck_ent.h" />
+    <ClInclude Include="..\..\..\..\source\ck_low_level_api.h" />
+    <ClInclude Include="..\..\..\..\source\ck_private_macro.h" />
+    <ClInclude Include="..\..\..\..\source\low_level_api\iphone\ck_iphone_bridge.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\source\low_level_api\ck_low_level_draw_opengl.cpp" />
+    <ClCompile Include="..\..\..\..\source\low_level_api\ck_low_level_io_gen.cpp" />
+    <ClCompile Include="..\..\..\..\source\low_level_api\ck_low_level_math_gen.cpp" />
+    <ClCompile Include="..\..\..\..\source\low_level_api\ck_low_level_mem_gen.cpp" />
+    <ClCompile Include="..\..\..\..\source\low_level_api\ck_low_level_util_freetype.cpp" />
+    <ClCompile Include="..\..\..\..\source\low_level_api\ck_low_level_util_libpng.cpp" />
+    <ClCompile Include="..\..\..\..\source\low_level_api\win32\ck_low_level_snd_win32.cpp" />
+    <ClCompile Include="..\..\..\..\source\low_level_api\win32\ck_low_level_sys_win32.cpp" />
+    <ClCompile Include="..\..\..\..\source\low_level_api\linux\ck_low_level_snd_linux.cpp" />
+    <ClCompile Include="..\..\..\..\source\low_level_api\linux\ck_low_level_sys_linux.cpp" />
+    <ClCompile Include="..\..\..\..\source\low_level_api\iphone\ck_low_level_snd_iphone.cpp" />
+    <ClCompile Include="..\..\..\..\source\low_level_api\iphone\ck_low_level_sys_iphone.cpp" />
+    <ClCompile Include="..\..\..\..\source\low_level_api\macosx\ck_low_level_snd_macosx.cpp" />
+    <ClCompile Include="..\..\..\..\source\low_level_api\macosx\ck_low_level_sys_macosx.cpp" />
+    <ClCompile Include="..\..\..\..\source\low_level_api\android\ck_low_level_snd_android.cpp" />
+    <ClCompile Include="..\..\..\..\source\low_level_api\android\ck_low_level_sys_android.cpp" />
+    <ClCompile Include="..\..\..\..\source\gen\ck_id.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_col.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_draw.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_draw_mgr.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_font.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_lit.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_lts.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_mdl.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_mdl_data.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_mot.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_mot_data.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_node.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_prim.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_rend.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_scr.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_shd.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_sprt.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\ck_tex.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\rend\ck_rend_light.cpp" />
+    <ClCompile Include="..\..\..\..\source\draw\rend\ck_rend_shader.cpp" />
+    <ClCompile Include="..\..\..\..\source\math\ck_fix.cpp" />
+    <ClCompile Include="..\..\..\..\source\math\ck_mat.cpp" />
+    <ClCompile Include="..\..\..\..\source\math\ck_math.cpp" />
+    <ClCompile Include="..\..\..\..\source\math\ck_quat.cpp" />
+    <ClCompile Include="..\..\..\..\source\math\ck_vec.cpp" />
+    <ClCompile Include="..\..\..\..\source\task\ck_task.cpp" />
+    <ClCompile Include="..\..\..\..\source\task\ck_task_mgr.cpp" />
+    <ClCompile Include="..\..\..\..\source\sys\ck_sys_mgr.cpp" />
+    <ClCompile Include="..\..\..\..\source\sys\ck_sys_util.cpp" />
+    <ClCompile Include="..\..\..\..\source\res\ck_res.cpp" />
+    <ClCompile Include="..\..\..\..\source\res\ck_res_mgr.cpp" />
+    <ClCompile Include="..\..\..\..\source\key\ck_key_mgr.cpp" />
+    <ClCompile Include="..\..\..\..\source\dbg\ck_dbg_mgr.cpp" />
+    <ClCompile Include="..\..\..\..\source\dbg\ck_dbg_mgr_draw.cpp" />
+    <ClCompile Include="..\..\..\..\source\dbg\ck_dbg_mgr_dump.cpp" />
+    <ClCompile Include="..\..\..\..\source\dbg\ck_dbg_mgr_font.cpp" />
+    <ClCompile Include="..\..\..\..\source\util\ck_util.cpp" />
+    <ClCompile Include="..\..\..\..\source\util\ck_util_import_3ds_model.cpp" />
+    <ClCompile Include="..\..\..\..\source\util\ck_util_load_pixel_art_model.cpp" />
+    <ClCompile Include="..\..\..\..\source\snd\ck_snd_mgr.cpp" />
+    <ClCompile Include="..\..\..\..\source\snd\ck_snd_mgr_mix.cpp" />
+    <ClCompile Include="..\..\..\..\source\cdt\ck_cdt_aabb.cpp" />
+    <ClCompile Include="..\..\..\..\source\cdt\ck_cdt_box.cpp" />
+    <ClCompile Include="..\..\..\..\source\cdt\ck_cdt_ray.cpp" />
+    <ClCompile Include="..\..\..\..\source\cdt\ck_cdt_sph.cpp" />
+    <ClCompile Include="..\..\..\..\source\cdt\ck_cdt_tri.cpp" />
+    <ClCompile Include="..\..\..\..\source\mem\ck_mem_mgr.cpp" />
+    <ClCompile Include="..\..\..\..\source\mem\ck_mem_util.cpp" />
+    <ClCompile Include="..\..\..\..\source\conf\ck_conf.cpp" />
+    <ClCompile Include="..\..\..\..\source\conf\ck_conf_mgr.cpp" />
+    <ClCompile Include="..\..\..\..\source\conf\ck_conf_parse.cpp" />
+    <ClCompile Include="..\..\..\..\source\conf\ck_ent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\source\low_level_api\iphone\ck_iphone_bridge.mm" />
+    <None Include="..\..\..\..\doc\changelog.txt" />
+    <None Include="..\..\..\..\doc\license.txt" />
+    <None Include="..\..\..\..\doc\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

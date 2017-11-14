@@ -1,0 +1,199 @@
+﻿Build started 2012-3-3 12:33:17.
+     1>Project "Q:\Source\catcake\project\win32\catcake\test\test.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Obj\test.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         F:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\..\include /I..\..\..\..\test /ZI /nologo /W3 /WX /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\Obj\\" /Fd"Debug\Obj\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\test\draw_test\ck_col_test.cpp ..\..\..\..\test\draw_test\ck_draw_mgr_test.cpp ..\..\..\..\test\draw_test\ck_font_test.cpp ..\..\..\..\test\draw_test\ck_lit_test.cpp ..\..\..\..\test\draw_test\ck_lts_test.cpp ..\..\..\..\test\draw_test\ck_mdl_data_test.cpp ..\..\..\..\test\draw_test\ck_mdl_test.cpp ..\..\..\..\test\draw_test\ck_mot_data_test.cpp ..\..\..\..\test\draw_test\ck_mot_test.cpp ..\..\..\..\test\draw_test\ck_node_test.cpp ..\..\..\..\test\draw_test\ck_prim_test.cpp ..\..\..\..\test\draw_test\ck_rend_test.cpp ..\..\..\..\test\draw_test\ck_scr_test.cpp ..\..\..\..\test\draw_test\ck_shd_test.cpp ..\..\..\..\test\draw_test\ck_sprt_test.cpp ..\..\..\..\test\draw_test\ck_tex_test.cpp ..\..\..\..\test\draw_test\rend_test\ck_rend_light_test.cpp ..\..\..\..\test\draw_test\rend_test\ck_rend_shader_test.cpp ..\..\..\..\test\gen_test\ck_buf_test.cpp ..\..\..\..\test\gen_test\ck_flag_test.cpp ..\..\..\..\test\gen_test\ck_id_test.cpp ..\..\..\..\test\gen_test\ck_list_test.cpp ..\..\..\..\test\gen_test\ck_map_test.cpp ..\..\..\..\test\gen_test\ck_msg_test.cpp ..\..\..\..\test\gen_test\ck_str_test.cpp ..\..\..\..\test\gen_test\ck_tree_test.cpp ..\..\..\..\test\gen_test\ck_type_test.cpp ..\..\..\..\test\math_test\ck_fix_test.cpp ..\..\..\..\test\math_test\ck_mat_test.cpp ..\..\..\..\test\math_test\ck_math_test.cpp ..\..\..\..\test\math_test\ck_quat_test.cpp ..\..\..\..\test\math_test\ck_vec_test.cpp ..\..\..\..\test\mem_test\ck_mem_mgr_test.cpp ..\..\..\..\test\mem_test\ck_mem_util_test.cpp ..\..\..\..\test\res_test\ck_res_mgr_test.cpp ..\..\..\..\test\res_test\ck_res_test.cpp ..\..\..\..\test\sys_test\ck_sys_mgr_test.cpp ..\..\..\..\test\sys_test\ck_sys_util_test.cpp ..\..\..\..\test\task_test\ck_task_mgr_test.cpp ..\..\..\..\test\task_test\ck_task_test.cpp ..\..\..\..\test\task_test\ck_task_util_test.cpp ..\..\..\..\test\key_test\ck_key_mgr_test.cpp ..\..\..\..\test\dbg_test\ck_dbg_mgr_test.cpp ..\..\..\..\test\util_test\ck_util_test.cpp ..\..\..\..\test\snd_test\ck_snd_mgr_test.cpp ..\..\..\..\test\cdt_test\ck_cdt_aabb_test.cpp ..\..\..\..\test\cdt_test\ck_cdt_box_test.cpp ..\..\..\..\test\cdt_test\ck_cdt_ray_test.cpp ..\..\..\..\test\cdt_test\ck_cdt_sph_test.cpp ..\..\..\..\test\cdt_test\ck_cdt_test.cpp ..\..\..\..\test\cdt_test\ck_cdt_tri_test.cpp ..\..\..\..\test\conf_test\ck_conf_mgr_test.cpp ..\..\..\..\test\conf_test\ck_conf_test.cpp ..\..\..\..\test\conf_test\ck_ent_test.cpp ..\..\..\..\test\main.cpp ..\..\..\..\test\test_util.cpp
+         test_util.cpp
+         main.cpp
+         ck_ent_test.cpp
+         ck_conf_test.cpp
+         ck_conf_mgr_test.cpp
+         ck_cdt_tri_test.cpp
+         ck_cdt_test.cpp
+         ck_cdt_sph_test.cpp
+         ck_cdt_ray_test.cpp
+         ck_cdt_box_test.cpp
+         ck_cdt_aabb_test.cpp
+         ck_snd_mgr_test.cpp
+         ck_util_test.cpp
+         ck_dbg_mgr_test.cpp
+         ck_key_mgr_test.cpp
+         ck_task_util_test.cpp
+         ck_task_test.cpp
+         ck_task_mgr_test.cpp
+         ck_sys_util_test.cpp
+         ck_sys_mgr_test.cpp
+         Generating Code...
+         Compiling...
+         ck_res_test.cpp
+         ck_res_mgr_test.cpp
+         ck_mem_util_test.cpp
+         ck_mem_mgr_test.cpp
+         ck_vec_test.cpp
+         ck_quat_test.cpp
+         ck_math_test.cpp
+         ck_mat_test.cpp
+         ck_fix_test.cpp
+         ck_type_test.cpp
+         ck_tree_test.cpp
+         ck_str_test.cpp
+         ck_msg_test.cpp
+         ck_map_test.cpp
+         ck_list_test.cpp
+         ck_id_test.cpp
+         ck_flag_test.cpp
+         ck_buf_test.cpp
+         ck_rend_shader_test.cpp
+         ck_rend_light_test.cpp
+         Generating Code...
+         Compiling...
+         ck_tex_test.cpp
+         ck_sprt_test.cpp
+         ck_shd_test.cpp
+         ck_scr_test.cpp
+         ck_rend_test.cpp
+         ck_prim_test.cpp
+         ck_node_test.cpp
+         ck_mot_test.cpp
+         ck_mot_data_test.cpp
+         ck_mdl_test.cpp
+         ck_mdl_data_test.cpp
+         ck_lts_test.cpp
+         ck_lit_test.cpp
+         ck_font_test.cpp
+         ck_draw_mgr_test.cpp
+         ck_col_test.cpp
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Obj\test.exe.embed.manifest.res" Debug\Obj\test_manifest.rc 
+       Link:
+         F:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Q:\Source\catcake\project\win32\catcake\Debug\test.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\..\..\..\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Obj\test.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"Q:\Source\catcake\project\win32\catcake\Debug\test.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Q:\Source\catcake\project\win32\catcake\Debug\test.lib" /MACHINE:X86 Debug\Obj\test.exe.embed.manifest.res
+         Debug\Obj\ck_col_test.obj
+         Debug\Obj\ck_draw_mgr_test.obj
+         Debug\Obj\ck_font_test.obj
+         Debug\Obj\ck_lit_test.obj
+         Debug\Obj\ck_lts_test.obj
+         Debug\Obj\ck_mdl_data_test.obj
+         Debug\Obj\ck_mdl_test.obj
+         Debug\Obj\ck_mot_data_test.obj
+         Debug\Obj\ck_mot_test.obj
+         Debug\Obj\ck_node_test.obj
+         Debug\Obj\ck_prim_test.obj
+         Debug\Obj\ck_rend_test.obj
+         Debug\Obj\ck_scr_test.obj
+         Debug\Obj\ck_shd_test.obj
+         Debug\Obj\ck_sprt_test.obj
+         Debug\Obj\ck_tex_test.obj
+         Debug\Obj\ck_rend_light_test.obj
+         Debug\Obj\ck_rend_shader_test.obj
+         Debug\Obj\ck_buf_test.obj
+         Debug\Obj\ck_flag_test.obj
+         Debug\Obj\ck_id_test.obj
+         Debug\Obj\ck_list_test.obj
+         Debug\Obj\ck_map_test.obj
+         Debug\Obj\ck_msg_test.obj
+         Debug\Obj\ck_str_test.obj
+         Debug\Obj\ck_tree_test.obj
+         Debug\Obj\ck_type_test.obj
+         Debug\Obj\ck_fix_test.obj
+         Debug\Obj\ck_mat_test.obj
+         Debug\Obj\ck_math_test.obj
+         Debug\Obj\ck_quat_test.obj
+         Debug\Obj\ck_vec_test.obj
+         Debug\Obj\ck_mem_mgr_test.obj
+         Debug\Obj\ck_mem_util_test.obj
+         Debug\Obj\ck_res_mgr_test.obj
+         Debug\Obj\ck_res_test.obj
+         Debug\Obj\ck_sys_mgr_test.obj
+         Debug\Obj\ck_sys_util_test.obj
+         Debug\Obj\ck_task_mgr_test.obj
+         Debug\Obj\ck_task_test.obj
+         Debug\Obj\ck_task_util_test.obj
+         Debug\Obj\ck_key_mgr_test.obj
+         Debug\Obj\ck_dbg_mgr_test.obj
+         Debug\Obj\ck_util_test.obj
+         Debug\Obj\ck_snd_mgr_test.obj
+         Debug\Obj\ck_cdt_aabb_test.obj
+         Debug\Obj\ck_cdt_box_test.obj
+         Debug\Obj\ck_cdt_ray_test.obj
+         Debug\Obj\ck_cdt_sph_test.obj
+         Debug\Obj\ck_cdt_test.obj
+         Debug\Obj\ck_cdt_tri_test.obj
+         Debug\Obj\ck_conf_mgr_test.obj
+         Debug\Obj\ck_conf_test.obj
+         Debug\Obj\ck_ent_test.obj
+         Debug\Obj\main.obj
+         Debug\Obj\test_util.obj
+         Q:\Source\catcake\project\win32\catcake\Debug\catcaked.lib
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Obj\test.exe.embed.manifest" /manifest Debug\Obj\test.exe.intermediate.manifest
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Obj\test.exe.embed.manifest.res" Debug\Obj\test_manifest.rc 
+       LinkEmbedManifest:
+         F:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Q:\Source\catcake\project\win32\catcake\Debug\test.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\..\..\..\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Obj\test.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"Q:\Source\catcake\project\win32\catcake\Debug\test.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Q:\Source\catcake\project\win32\catcake\Debug\test.lib" /MACHINE:X86 Debug\Obj\test.exe.embed.manifest.res
+         Debug\Obj\ck_col_test.obj
+         Debug\Obj\ck_draw_mgr_test.obj
+         Debug\Obj\ck_font_test.obj
+         Debug\Obj\ck_lit_test.obj
+         Debug\Obj\ck_lts_test.obj
+         Debug\Obj\ck_mdl_data_test.obj
+         Debug\Obj\ck_mdl_test.obj
+         Debug\Obj\ck_mot_data_test.obj
+         Debug\Obj\ck_mot_test.obj
+         Debug\Obj\ck_node_test.obj
+         Debug\Obj\ck_prim_test.obj
+         Debug\Obj\ck_rend_test.obj
+         Debug\Obj\ck_scr_test.obj
+         Debug\Obj\ck_shd_test.obj
+         Debug\Obj\ck_sprt_test.obj
+         Debug\Obj\ck_tex_test.obj
+         Debug\Obj\ck_rend_light_test.obj
+         Debug\Obj\ck_rend_shader_test.obj
+         Debug\Obj\ck_buf_test.obj
+         Debug\Obj\ck_flag_test.obj
+         Debug\Obj\ck_id_test.obj
+         Debug\Obj\ck_list_test.obj
+         Debug\Obj\ck_map_test.obj
+         Debug\Obj\ck_msg_test.obj
+         Debug\Obj\ck_str_test.obj
+         Debug\Obj\ck_tree_test.obj
+         Debug\Obj\ck_type_test.obj
+         Debug\Obj\ck_fix_test.obj
+         Debug\Obj\ck_mat_test.obj
+         Debug\Obj\ck_math_test.obj
+         Debug\Obj\ck_quat_test.obj
+         Debug\Obj\ck_vec_test.obj
+         Debug\Obj\ck_mem_mgr_test.obj
+         Debug\Obj\ck_mem_util_test.obj
+         Debug\Obj\ck_res_mgr_test.obj
+         Debug\Obj\ck_res_test.obj
+         Debug\Obj\ck_sys_mgr_test.obj
+         Debug\Obj\ck_sys_util_test.obj
+         Debug\Obj\ck_task_mgr_test.obj
+         Debug\Obj\ck_task_test.obj
+         Debug\Obj\ck_task_util_test.obj
+         Debug\Obj\ck_key_mgr_test.obj
+         Debug\Obj\ck_dbg_mgr_test.obj
+         Debug\Obj\ck_util_test.obj
+         Debug\Obj\ck_snd_mgr_test.obj
+         Debug\Obj\ck_cdt_aabb_test.obj
+         Debug\Obj\ck_cdt_box_test.obj
+         Debug\Obj\ck_cdt_ray_test.obj
+         Debug\Obj\ck_cdt_sph_test.obj
+         Debug\Obj\ck_cdt_test.obj
+         Debug\Obj\ck_cdt_tri_test.obj
+         Debug\Obj\ck_conf_mgr_test.obj
+         Debug\Obj\ck_conf_test.obj
+         Debug\Obj\ck_ent_test.obj
+         Debug\Obj\main.obj
+         Debug\Obj\test_util.obj
+         Q:\Source\catcake\project\win32\catcake\Debug\catcaked.lib
+         test.vcxproj -> Q:\Source\catcake\project\win32\catcake\Debug\test.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\Obj\test.unsuccessfulbuild".
+         Touching "Debug\Obj\test.lastbuildstate".
+     1>Done Building Project "Q:\Source\catcake\project\win32\catcake\test\test.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.18
